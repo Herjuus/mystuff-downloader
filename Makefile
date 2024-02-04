@@ -33,13 +33,14 @@ LDFLAGS	=	-g $(MACHDEP) -Wl,-Map,$(notdir $@).map
 #---------------------------------------------------------------------------------
 # any extra libraries we wish to link with the project
 #---------------------------------------------------------------------------------
-LIBS    :=    -lwiiuse -lbte -logc -lm -lcurl
+LIBS    :=    -lwiiuse -lbte -logc -lm -lwiisprite
+# -lcurl
 
 #---------------------------------------------------------------------------------
 # list of directories containing libraries, this must be the top level containing
 # include and lib
 #---------------------------------------------------------------------------------
-LIBDIRS	:=
+LIBDIRS	:= $(DEVKITPRO)/portlibs/wii/ /opt/homebrew/opt/zlib/ /opt/homebrew/ /opt/homebrew/lib/pkgconfig/
 
 #---------------------------------------------------------------------------------
 # no real need to edit anything past this point unless you need to add additional

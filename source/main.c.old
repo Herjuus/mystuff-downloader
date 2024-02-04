@@ -5,7 +5,7 @@
 #include <ogcsys.h>
 #include <gccore.h>
 #include <wiiuse/wpad.h>
-#include <curl/curl.h>
+//#include <curl/curl.h>
 
 static u32 *xfb;
 static GXRModeObj *rmode;
